@@ -30,26 +30,35 @@ function HookCounter() {
         } >
         <
         button style = {
-            { width: "200px", height: "100px" }
+            { width: "200px", height: "100px", backgroundColor: "#28a745", border: "1px solid #28a745" }
         }
         onClick = {
             () => dispatcher('increment')
         } >
-        + < /button> <
+        <
+        i class = "fa fa-plus fa-2x"
+        style = {
+            { color: "white" }
+        } > < /i> < /button > <
         button style = {
-            { width: "200px", height: "100px" }
+            { width: "200px", height: "100px", backgroundColor: "#ffc107", border: "1px solid #ffc107" }
         }
         onClick = {
             () => dispatcher('reset')
         } >
-        x < /button> <
+        <
+        i class = "fa fa-refresh fa-2x" > < /i> < /button > <
         button style = {
-            { width: "200px", height: "100px" }
+            { width: "200px", height: "100px", backgroundColor: "#dc3545", border: "1px solid #dc3545" }
         }
         onClick = {
             () => dispatcher('decrement')
         } >
-        - < /button>  < /
+        <
+        i class = "fa fa-minus fa-2x"
+        style = {
+            { color: "white" }
+        } > < /i> < /button > < /
         div > < /
         div >
     )
